@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let num = '10'
+        // Number(数据)
+        console.log(Number('10'))
+        // 转换为数字型，只保留整数，没有四舍五入
+        console.log(parseInt('10'))
+        console.log(parseInt('10.1111'))
+        console.log(parseInt('10.9999'))
+        //转换为整数型，会保留小数
+        console.log(parseFloat('10.9999'))
+        //区别：
+        // Number()只能放数字类型的字符，不能放abc这样的
+        // 否则返回的是NaN not A number
+        console.log(Number('10.01abc'))
+        // parseFloat 经常用于过滤单位
+        console.log(parseFloat('10.01abc'))
+
+
+
+
+
+
+    </script>
+</body>
+</html>

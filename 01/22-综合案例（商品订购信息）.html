@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        table{
+            margin:0 auto;
+            text-align: center;
+            border-collapse:collapse;
+        }
+        table th,tr{
+            border: 1px solid #000;
+            padding:15px;
+        }
+        table caption{
+            margin:15px;
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <script>
+        // 1.输入price num addres 三个变量
+        let price = +prompt('请输入商品价格：')
+        let num = +prompt('请输入购买的数量')
+        let address = prompt('请输入收货的地址：')
+        let total = price *num
+        // 2.渲染表格填充数据
+        document.write(`<table>
+  <caption><h2>付款订单确认</h2></caption>
+   
+        <tr><th>商品名称</th>
+        <th>商品价格</th>
+        <th>商品数量</th>
+        <th>总价</th>
+    <th>收获地址</th></tr>
+        <tr><th>小米手机青春PLUS</th>
+        <th>${price}元</th>
+        <th>${num}</th>
+        <th>${total}</th>
+    <th>${address}</th></tr>
+    </table>`)
+
+    </script>
+</body>
+</html>

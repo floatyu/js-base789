@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let arr =[5,4,3,2,1]
+    //1.外层循环控制趟数 循环4次 arr.length-1
+    for(let i=0;i<arr.length-1;i++){
+        //里层的循环 控制一趟交换几次 arr.length-i-1
+        for(let n=0;n<arr.length-i-1;n++){
+           if(arr[n] >arr[n + 1]) {
+            let temp = arr[n]
+            arr[n]=arr[n+1]
+            arr[n+1]= temp
+           }
+
+        }
+    }
+    document.write(arr)
+   </script> 
+</body>
+</html>

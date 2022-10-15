@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=['red','green','blue']
+        //删除最后一个元素
+        //arr.pop()
+        /* document.write(`${arr.pop()} <br>`)
+        document.write(`${arr }<br>`)
+        document.write(`${arr.shift()}<br>`)
+        document.write(`${arr}`) */
+        arr.splice(1,1)
+        //我就想把green删掉
+        //第一个1 是从索引号是1的位置开始删
+        //第二1 是删除几个
+        document.write(arr)
+    </script>
+</body>
+</html>
